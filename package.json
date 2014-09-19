@@ -1,12 +1,22 @@
 {
   "name": "inflecto",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "High performance inflection",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/minibikini/inflecto.git"
+  },
   "author": "Egor Kislitsyn <egor@kislitsyn.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/minibikini/inflecto/issues"
+  },
+  "homepage": "https://github.com/minibikini/inflecto",
+
   "license": "ISC",
   "dependencies": {
     "coffee-script": "^1.8.0",
