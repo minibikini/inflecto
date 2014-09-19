@@ -28,6 +28,7 @@ inflecto =
     newObj[inflecto.camelize key] = val for key, val of obj
     newObj
 
+# TODO:
 # indexOf( arr, item, from_index, compare_func );
 # pluralize( str, plural );
 # singularize( str, singular );
