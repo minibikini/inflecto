@@ -26,7 +26,7 @@
   "license": "ISC",
   "dependencies": {
     "coffee-script": "^1.8.0",
-    "inflection": "^1.4.2"
+    "inflection": "^1.5.1"
   },
   "devDependencies": {
     "benchmark": "^1.0.0"
