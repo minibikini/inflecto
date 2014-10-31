@@ -19,7 +19,10 @@
     "url": "https://github.com/minibikini/inflecto/issues"
   },
   "homepage": "https://github.com/minibikini/inflecto",
-
+  "files": [
+    "index.js",
+    "lib"
+  ],
   "license": "ISC",
   "dependencies": {
     "coffee-script": "^1.8.0",
