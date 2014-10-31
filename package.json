@@ -1,6 +1,6 @@
 {
   "name": "inflecto",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "High performance inflection",
   "main": "index.js",
   "engines": {
