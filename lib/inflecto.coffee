@@ -13,6 +13,9 @@ setCache = (method, key, val) ->
   idx[method][key] = val
 
 inflecto =
+  singularize: wrap 'singularize'
+  underscore: wrap 'underscore'
+
   camelize: (str) ->
     getCached('camelize', str) or setCache('camelize', str, inflection.camelize(str, true))
 
@@ -20,8 +23,10 @@ inflecto =
     getCached('camelizeBig', str) or setCache('camelizeBig', str, inflection.camelize(str, false))
 
   pluralize: wrap 'pluralize'
-  singularize: wrap 'singularize'
-  underscore: wrap 'underscore'
+
+  pluralizeClass: (str) ->
+    str = str[0].toLowerCase() + str[1..]
+    getCached('pluralizeClass', str) or setCache('pluralizeClass', str, inflection.pluralize(str))
 
   camelizeKeys: (obj) ->
     newObj = {}
@@ -30,7 +35,6 @@ inflecto =
 
 # TODO:
 # indexOf( arr, item, from_index, compare_func );
-# pluralize( str, plural );
 # singularize( str, singular );
 # inflect( str, count, singular, plural );
 # -- camelize( str, low_first_letter );
