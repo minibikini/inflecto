@@ -29,9 +29,15 @@ inflecto =
     getCached('pluralizeClass', str) or setCache('pluralizeClass', str, inflection.pluralize(str))
 
   camelizeKeys: (obj) ->
+    inflecto.with 'camelize', obj
+
+  with: (method, obj) ->
     newObj = {}
-    newObj[inflecto.camelize key] = val for key, val of obj
+    newObj[inflecto[method] key] = val for key, val of obj
     newObj
+
+  dasherizeKeys: (obj) ->
+    inflecto.with 'dasherize', obj
 
 # TODO:
 # indexOf( arr, item, from_index, compare_func );
