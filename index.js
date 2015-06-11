@@ -1,2 +1,1 @@
-require('coffee-script/register');
-module.exports = require('./lib/inflecto.coffee');
+module.exports = require('./lib/inflecto.js');
